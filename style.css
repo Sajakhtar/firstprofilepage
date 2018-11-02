@@ -1,0 +1,239 @@
+
+/*Global Body style*/
+
+body {
+    background-color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin:0;
+}
+
+
+/*Global Container style*/
+
+.container{
+    width: 100%;
+    margin: auto;
+    overflow: visbile;
+}
+
+
+#sidebar {
+    float: left;
+    width:30%;
+    background: black;
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 100%;
+    position:fixed;
+
+    background-image: url("https://i.ytimg.com/vi/aYIlKchp7AU/maxresdefault.jpg");
+}
+
+#main {
+    float: right;
+    width:70%;
+    background: whitesmoke;
+    color: black;
+    padding: 0 30px 20px 30px;
+    box-sizing: border-box;
+    min-height: 100%;
+    
+}
+
+/*Header sidebar style*/
+
+#profilePic {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    border-radius:100%;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 1.6em;
+    color:whitesmoke;
+    padding-bottom: 10px;
+    line-height: 1.5em;
+}
+
+
+#navbar {
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+
+#sidebar ul {
+    text-align: center;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+
+#sidebar li {
+    display: block;
+    text-align: center;
+    margin:0;
+    padding:10px;        
+}
+
+
+#sidebar a {
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: 700;
+}
+
+#sidebar a:hover {
+    color: turquoise;
+
+}
+
+
+#social {
+    margin:0;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+#social li {
+    display: inline;
+    text-align: center;
+    margin:0;
+    padding:10px;        
+}
+
+#social li a img{
+    height: 30px;
+}
+
+
+/*Section Main style*/
+
+#main #bio p {
+    margin: 0; /*need 0 margin to remove p tag white space exceeding main section*/
+    padding:50px 20px;    
+}
+
+#main #projects {
+    padding: 10px 20px;
+    border: 1px lightgray solid;
+    border-radius: 10px;
+}
+
+#main h2 {
+    text-align: center;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+#main #projects h3 {
+    text-align: left;
+    font-size: 1em;
+}
+
+#main #projects ul {
+    list-style: none;
+    padding:0;
+}
+
+#main #projects li {
+    padding-bottom: 20px;
+    border-bottom: 1px grey dotted;
+}
+
+#main #projects li:last-child {
+    border-bottom: 0;
+ }
+
+#main #projects .tools img {
+    height: 20px;
+}
+
+#main #projects .tools {
+    margin-bottom: 10px;
+}
+
+#main .button {
+    background-color: slategray;
+    color:white;
+    padding: 5px;
+    margin: 10px 0;
+    border: solid slategray;
+    border-radius: 7px;
+}
+
+#main a {
+    text-decoration: none;
+    font-size: .9em;
+}
+
+
+#main .button:hover {
+    background-color:teal;
+    border: solid teal;
+}
+
+
+#main #contact {
+    padding:20px;
+    margin: 50px 75px;
+}
+
+#main #contact .form-group {
+    padding: 10px 0;
+    
+}
+
+#main #contact .form-group label {
+    display: block;
+    
+}
+
+#main #contact .form-group input[type="text"], #main #contact .form-group textarea {
+    padding: 5px;
+    width: 100%;
+}
+
+
+/*Media Query for responsive style*/
+
+@media(max-width:600px) {
+    #main {
+        width:100%;
+        float:none;        
+    }
+
+    #sidebar {
+        width:100%;
+        float:none;
+        height:auto;
+        position: relative;
+    }
+
+    #sidebar li {
+        display: inline;
+    }
+
+    #profilePic {
+        width: 25%;        
+    }
+
+    #social {
+        padding-top: 15px;
+    }
+
+    #main #contact {
+        margin: 50px 25px;
+    }
+}
+
